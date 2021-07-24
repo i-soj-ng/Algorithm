@@ -1,3 +1,5 @@
+# 문제URL: https://programmers.co.kr/learn/courses/30/lessons/1845
+
 def solution(nums):
     answer = 0
     variety = len(set(nums))
