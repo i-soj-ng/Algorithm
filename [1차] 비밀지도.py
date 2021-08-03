@@ -8,6 +8,8 @@ def solution(n, arr1, arr2):
         b1 = list(format(arr1[i], 'b'))
         b2 = list(format(arr2[i], 'b'))
         
+        # 변환된 이진수의 길이가 n보다 작으면 아래의 for문에서 인덱스에러가 발생함.
+        # 이를 방지하기 위해 n보다 작은 만큼 이진수의 앞에 0을 추가하여 이진수의 길이가 n이 되도록 함.
         temp = n - len(b1)
         for t in range(temp):
             b1.insert(0, '0')
