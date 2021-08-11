@@ -12,7 +12,7 @@ def solution(price, money, count):
     
     answer = money - total
     
-    if answer >= 0:
+    if answer >= 0: # 돈이 부족하지 않은 경우 0을 반환함
         return 0
     else:
         return abs(answer)
